@@ -30,7 +30,7 @@ export default function Statistics() {
     var myHeaders = new Headers();
     myHeaders.append(
       "Authorization",
-      "Bearer 91dde578a0453568b989fcec64668c450743faef"
+      "Bearer 84a005429875d798f16be1d4b5a8029e8c0f18f3"
     );
 
     var myHeaders1 = new Headers();
