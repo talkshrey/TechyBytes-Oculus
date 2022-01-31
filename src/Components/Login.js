@@ -12,7 +12,7 @@ import Grid from '@mui/material/Grid';
 import Lottie from 'react-lottie';
 import ParticlesContainer from './ParticlesContainer'
 import lottie from '../Assets/lottie.json';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 
 
 export default function SignIn() {
@@ -60,7 +60,7 @@ export default function SignIn() {
   };
 
   return (
-    <>
+    <div style={{overflow:'hidden'}}>
     <div
       style={{
         display: 'flex',
@@ -164,10 +164,14 @@ export default function SignIn() {
                       fontSize: '14px',
                       textTransform: 'none',
                       fontFamily: 'ubuntu',
+                      ":hover":{
+                        backgroundColor:'#FB008B'
+                      }
                     }}
                   >
                     Sign In
                   </Button>
+                  <center> New user? <Link to="/register" style={{textTransform:'none', textDecoration:'none', color:'#FB008B'}}> Signup </Link> here </center>
                 </Box>
                 {/* </div> */}
               </Box>
@@ -185,6 +189,6 @@ export default function SignIn() {
       >
         <ParticlesContainer />
       </div>
-      </>
+      </div>
   )
 }

@@ -59,13 +59,14 @@ export default function SignUp() {
 }
 
   return (
-    <>
+    <div>
       <div
         style={{
           display: 'flex',
           justifyContent: 'center',
           height: 'inherit',
           alignItems: 'center',
+          marginTop:'20px'
         }}
       >
         <div
@@ -109,7 +110,7 @@ export default function SignUp() {
                 <TextField
                   margin="normal"
                   id="name"
-                  label="username"
+                  label="Username"
                   name="name"
                   sx={{
                     width: '350px',
@@ -183,11 +184,11 @@ export default function SignUp() {
         style={{
           opacity: '0.25',
           width: '100%',
-          height: '100%',
+          height: '60%',
         }}
       >
         <ParticlesContainer />
       </div>
-    </>
+    </div>
   )
 }
